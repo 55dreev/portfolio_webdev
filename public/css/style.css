@@ -1,0 +1,325 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky; /* Make the navbar sticky */
+    top: 0; /* Set it to stick at the top */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #17a2b8;
+}
+
+.hero-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-section button {
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-section button:hover {
+    background-color: #138496;
+}
+
+.about-section {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.about-image {
+    flex: 0 0 350px; /* Adjust base width for the image */
+    max-width: 600px; /* Increase maximum size */
+    margin: 0; /* Remove margin */
+    margin-right: 40px;
+    margin-top: -408px;
+}
+
+.about-image img {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add rounding to corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.about-details {
+    flex: 1; /* Allow details section to grow */
+    max-width: 500px; /* Limit the width of the text content */
+    text-align: left; /* Align text to the left */
+    margin: 0; /* Remove margin */
+}
+
+.about-details h3 {
+    color: #17a2b8;
+    margin-bottom: 10px;
+}
+
+.about-details ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.about-quote {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.about-quote blockquote {
+    font-style: italic;
+    border-left: 2px solid #ccc;
+    padding-left: 10px;
+    margin: 10px 0;
+}
+
+.portfolio-section {
+    background-color: #f2f0f0cd;
+    padding: 50px 20px;
+}
+
+.portfolio-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #17a2b8;
+}
+
+.portfolio-items {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s; /* Animation for hover effect */
+}
+
+.portfolio-image {
+    width: 250px; /* Fixed width */
+    height: 150px; /* Fixed height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 8px; /* Rounded corners for images */
+    margin-bottom: 10px; /* Space between image and title */
+}
+
+.view-github {
+    text-align: center; /* Center the button */
+    margin-top: 20px; /* Space above the button */
+}
+
+.github-link {
+    display: inline-block;
+    background-color: #17a2b8;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s; /* Animation for button hover */
+}
+
+.github-link:hover {
+    background-color: #138496; /* Darker shade on hover */
+}
+
+.lab-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.content-wrapper {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #17a2b8;
+}
+
+.lab-description {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Slideshow styles */
+.slideshow-container {
+    max-width: 100%; /* Keep this as it is */
+    position: relative;
+    margin: 20px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 400px; /* Set a fixed height for the slideshow */
+}
+
+.slide {
+    display: none;
+    height: 100%; /* Ensure each slide takes the full height of the container */
+}
+
+.slide img {
+    width: 100%; /* Make image responsive to the container width */
+    height: 100%; /* Make image responsive to the container height */
+    object-fit: cover; /* This ensures the image covers the area without distortion */
+    border-radius: 10px; /* Rounded corners for images */
+}
+
+.caption {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from { opacity: 0; } 
+    to { opacity: 1; }
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #17a2b8;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.back-link:hover {
+    background-color: #138496;
+}
+.contact-section {
+    text-align: center; /* Center the text */
+    padding: 40px 20px; /* Add padding */
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    margin: 20px; /* Margin around the section */
+}
+
+.contact-section h2 {
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.view-github-profile {
+    margin-top: 20px; /* Space above the button */
+}
+
+.github-profile-link {
+    display: inline-block; /* Make it a block element */
+    background-color: #17a2b8; /* Button color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Transition effect for hover */
+}
+
+.github-profile-link:hover {
+    background-color: #138496; /* Darker shade on hover */
+}
+
